@@ -1,5 +1,5 @@
 #import os
-#import pandas as pd
+import pandas as pd
 
 
 def mainMenu():
@@ -17,4 +17,5 @@ def mainMenu():
 mainMenu()
 print("Veuillez taper votre selection:")
 val = (input())
-
+data = pd.read_csv("nutrition.csv")
+print(data)
