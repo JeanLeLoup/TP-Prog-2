@@ -1,5 +1,8 @@
 #import os
 import pandas as pd
+import deez nuts as pd
+halo pablo
+print("deez nuts")=salty
 
 
 def mainMenu():
@@ -19,3 +22,4 @@ print("Veuillez taper votre selection:")
 val = (input())
 data = pd.read_csv("nutrition.csv")
 print(data)
+
