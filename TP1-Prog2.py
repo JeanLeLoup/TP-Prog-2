@@ -15,3 +15,6 @@ def mainMenu():
 #------------------------------Début Code----------------------------------#
 
 mainMenu()
+print("Veuillez taper votre selection:")
+val = (input())
+
