@@ -14,16 +14,15 @@ def mainMenu():
 def option1():
    print("yes sir!")
    print(data.to_string())
-   mainMenu()
+   return
 def option2():
    print("yay 2!")
+   # pour exportation ###################################
    from pandas import DataFrame
    dataFrm = DataFrame(data, columns=['Id', 'Catégorie', 'Description', 'Energ_Kcal'])
    # chemin vers un fichier pour stocker les resultats
    export_csv = dataFrm.to_csv(r'Pandaresult.csv', index=None, header=False)
    print(dataFrm)
-
-
 def option3():
    print("yay 3!")
 def option4():
@@ -35,11 +34,20 @@ def option6():
 #------------------------------Début Code----------------------------------#
 global val
 global data
-data = pd.read_csv("nutrition.csv")
+data = pd.read_csv("nutrition.csv", index_col="Id", sep=';', encoding='utf-8')
+
+#dataCate = data["Catégorie"]
+#dataId = data["Id"]
+#----- Exemple de variables pour print une seule valeur en particulier. ----------#
+#var = dataCate[4]
+#var2 = dataId[4]
+#print(var2)
+#print(var)
 
 mainMenu()
 print("Veuillez taper votre selection:")
 val = (input())
+
 if val == "1":
    option1()
 elif val == "2":
