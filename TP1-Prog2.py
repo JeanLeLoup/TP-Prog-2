@@ -1,9 +1,6 @@
 #import os
 import pandas as pd
 
-
-
-
 def mainMenu():
    print("*****************************************************************************")
    print("1-Afficher l’ensemble des aliments depuis le fichier Nutrition.CSV       ****")
@@ -15,16 +12,26 @@ def mainMenu():
    print("*****************************************************************************")
 
 def option1():
-   print("yessir!")
+   print("yes sir!")
    print(data.to_string())
+   mainMenu()
 def option2():
    print("yay 2!")
+   from pandas import DataFrame
+   dataFrm = DataFrame(data, columns=['Id', 'Catégorie', 'Description', 'Energ_Kcal'])
+   # chemin vers un fichier pour stocker les resultats
+   export_csv = dataFrm.to_csv(r'Pandaresult.csv', index=None, header=False)
+   print(dataFrm)
+
+
 def option3():
    print("yay 3!")
 def option4():
    print("yay 4!")
 def option5():
    print("yay 5!")
+def option6():
+   print("vous avez quitté!")
 #------------------------------Début Code----------------------------------#
 global val
 global data
@@ -37,5 +44,13 @@ if val == "1":
    option1()
 elif val == "2":
    option2()
+elif val == "3":
+   option3()
+elif val == "4":
+   option4()
+elif val == "5":
+   option5()
+elif val == "6":
+   option6()
 else:
    print("oh no!")
