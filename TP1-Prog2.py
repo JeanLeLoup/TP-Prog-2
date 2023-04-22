@@ -1,8 +1,7 @@
 #import os
 import pandas as pd
-import deez nuts as pd
-halo pablo
-print("deez nuts")=salty
+
+
 
 
 def mainMenu():
@@ -15,11 +14,28 @@ def mainMenu():
    print("6-Quitter                                                                ****")
    print("*****************************************************************************")
 
+def option1():
+   print("yessir!")
+   print(data.to_string())
+def option2():
+   print("yay 2!")
+def option3():
+   print("yay 3!")
+def option4():
+   print("yay 4!")
+def option5():
+   print("yay 5!")
 #------------------------------Début Code----------------------------------#
+global val
+global data
+data = pd.read_csv("nutrition.csv")
 
 mainMenu()
 print("Veuillez taper votre selection:")
 val = (input())
-data = pd.read_csv("nutrition.csv")
-print(data)
-
+if val == "1":
+   option1()
+elif val == "2":
+   option2()
+else:
+   print("oh no!")
