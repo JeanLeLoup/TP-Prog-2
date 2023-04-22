@@ -11,10 +11,28 @@ def mainMenu():
    print("6-Quitter                                                                ****")
    print("*****************************************************************************")
 
+   print("Veuillez taper votre selection:")
+   val = (input())
+   if val == "1":
+      option1()
+   elif val == "2":
+      option2()
+   elif val == "3":
+      option3()
+   elif val == "4":
+      option4()
+   elif val == "5":
+      option5()
+   elif val == "6":
+      option6()
+   else:
+      print("oh no!")
+   print("tapez une touche pour continuer")
+   input()
+   mainMenu()
 def option1():
    print("yes sir!")
    print(data.to_string())
-   return
 def option2():
    print("yay 2!")
    # pour exportation ###################################
@@ -22,7 +40,7 @@ def option2():
    dataFrm = DataFrame(data, columns=['Id', 'Catégorie', 'Description', 'Energ_Kcal'])
    # chemin vers un fichier pour stocker les resultats
    export_csv = dataFrm.to_csv(r'Pandaresult.csv', index=None, header=False)
-   print(dataFrm)
+   print(dataFrm.to_string())
 def option3():
    print("yay 3!")
 def option4():
@@ -45,20 +63,3 @@ data = pd.read_csv("nutrition.csv", index_col="Id", sep=';', encoding='utf-8')
 #print(var)
 
 mainMenu()
-print("Veuillez taper votre selection:")
-val = (input())
-
-if val == "1":
-   option1()
-elif val == "2":
-   option2()
-elif val == "3":
-   option3()
-elif val == "4":
-   option4()
-elif val == "5":
-   option5()
-elif val == "6":
-   option6()
-else:
-   print("oh no!")
