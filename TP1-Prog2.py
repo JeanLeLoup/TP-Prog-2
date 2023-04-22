@@ -32,15 +32,16 @@ def mainMenu():
    mainMenu()
 def option1():
    print("yes sir!")
-   print(data.to_string())
+   print(dataSort.to_string())
 def option2():
    print("yay 2!")
    # pour exportation ###################################
    from pandas import DataFrame
-   dataFrm = DataFrame(data, columns=['Id', 'Catégorie', 'Description', 'Energ_Kcal'])
+   dataFrmEnerg = DataFrame(dataSortId, columns=['Catégorie', 'Description', 'Energ_Kcal'], )
+   print(dataFrmEnerg.to_string())
    # chemin vers un fichier pour stocker les resultats
-   export_csv = dataFrm.to_csv(r'Pandaresult.csv', index=None, header=False)
-   print(dataFrm.to_string())
+   export_csv = dataFrmEnerg.to_csv(r'Pandaresult.csv')
+
 def option3():
    print("yay 3!")
 def option4():
@@ -52,8 +53,9 @@ def option6():
 #------------------------------Début Code----------------------------------#
 global val
 global data
+global dataSort
 data = pd.read_csv("nutrition.csv", index_col="Id", sep=';', encoding='utf-8')
-
+dataSortId = data.sort_values(by="Id", ascending=True)
 #dataCate = data["Catégorie"]
 #dataId = data["Id"]
 #----- Exemple de variables pour print une seule valeur en particulier. ----------#
