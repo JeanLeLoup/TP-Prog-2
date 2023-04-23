@@ -82,14 +82,21 @@ def option6():
 global val
 global data
 global dataSortId
+# ---- Option 1 ---- #
 data = pd.read_csv("nutrition.csv", index_col='Id', sep=';', encoding='utf-8')
 dataSortId = data.sort_values(by="Id", ascending=True)
+# ---- Option 2 ---- #
 dataOptions = pd.read_csv("nutrition.csv", index_col='Id', sep=';', encoding='utf-8')
 dataSortEner = dataOptions.sort_values(by="Energ_Kcal", ascending=False)
 dataSortProt = dataOptions.sort_values(by="Protéine", ascending=False)
 dataSortGras = dataOptions.sort_values(by="gras", ascending=False)
 dataSortChol = dataOptions.sort_values(by="Cholestérol", ascending=False)
 dataSortSodi = dataOptions.sort_values(by="Sodium", ascending=False)
+# ---- Option 3 ---- #
+
+
+
+
 #dataCate = data["Catégorie"]
 #dataId = data["Id"]
 #----- Exemple de variables pour print une seule valeur en particulier. ----------#
