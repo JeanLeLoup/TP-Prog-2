@@ -1,6 +1,4 @@
-#import os
 import pandas as pd
-
 def mainMenu():
    print("*****************************************************************************")
    print("1-Afficher l’ensemble des aliments depuis le fichier Nutrition.CSV       ****")
@@ -10,7 +8,7 @@ def mainMenu():
    print("5-Ajouter un aliment                                                     ****")
    print("6-Quitter                                                                ****")
    print("*****************************************************************************")
-   print("Veuillez taper votre selection:")
+   print("Veuillez entrer votre selection:")
    val = (input())
    if val == "1":
       option1()
@@ -27,9 +25,8 @@ def mainMenu():
    else:
       print("oh no!")
    mainMenu()
-   print("tapez une touche pour continuer")
+   print("Tapez une touche pour continuer.")
    input()
-
 def option1():
    print("yay 1!")
    print(dataSortId.to_string())
@@ -41,61 +38,66 @@ def option2():
       from pandas import DataFrame
       dataFrmEnerg = DataFrame(dataSortEner, columns=['Catégorie', 'Description', 'Energ_Kcal'], )
       print(dataFrmEnerg.to_string())
-      export_csv = dataFrmEnerg.to_csv(r'nutrition_Energ_Kcal.csv')
+      dataFrmEnerg.to_csv(r'nutrition_Energ_Kcal.csv')
    elif choix == "Protéine":
       from pandas import DataFrame
       dataFrmProt = DataFrame(dataSortProt, columns=['Catégorie', 'Description', 'Protéine'], )
       print(dataFrmProt.to_string())
-      export_csv = dataFrmProt.to_csv(r'nutrition_Protéine.csv')
+      dataFrmProt.to_csv(r'nutrition_Protéine.csv')
    elif choix == "gras":
       from pandas import DataFrame
       dataFrmGras = DataFrame(dataSortGras, columns=['Catégorie', 'Description', 'gras'], )
       print(dataFrmGras.to_string())
-      export_csv = dataFrmGras.to_csv(r'nutrition_gras.csv')
+      dataFrmGras.to_csv(r'nutrition_gras.csv')
    elif choix == "Cholestérol":
       from pandas import DataFrame
       dataFrmChol = DataFrame(dataSortChol, columns=['Catégorie', 'Description', 'Cholestérol'], )
       print(dataFrmChol.to_string())
-      export_csv = dataFrmChol.to_csv(r'nutrition_Cholestérol.csv')
+      dataFrmChol.to_csv(r'nutrition_Cholestérol.csv')
    elif choix == "Sodium":
       from pandas import DataFrame
       dataFrmSodium = DataFrame(dataSortSodi, columns=['Catégorie', 'Description', 'Sodium'], )
       print(dataFrmSodium.to_string())
-      export_csv = dataFrmSodium.to_csv(r'nutrition_Sodium.csv')
+      dataFrmSodium.to_csv(r'nutrition_Sodium.csv')
    # pour exportation ###################################
    #from pandas import DataFrame
    #dataFrmEnerg = DataFrame(dataSortId, columns=['Catégorie', 'Description', 'Energ_Kcal'], )
    #print(dataFrmEnerg.to_string())
    # chemin vers un fichier pour stocker les resultats
    #export_csv = dataFrmEnerg.to_csv(r'Pandaresult.csv')
-
-
 def option3():
    print("yay 3!")
+   val = input("Veuillez insérer la ID d’un aliment -->")
+   print("L’élément est trouvé!")
+   print("***********************************************")
+   print(dataEnTete.loc[int(val)])
+   print("***********************************************")
 def option4():
    print("yay 4!")
 def option5():
    print("yay 5!")
 def option6():
    print("vous avez quitté!")
-#------------------------------Début Code----------------------------------#
+# ------------------------------ Début Code ---------------------------------- #
 global val
-global data
-global dataSortId
+#global data
+#global dataSortId
+   # ---- Valeurs Option 1 ---- #
 data = pd.read_csv("nutrition.csv", index_col='Id', sep=';', encoding='utf-8')
 dataSortId = data.sort_values(by="Id", ascending=True)
+   # ---- Valeurs Option 2 ---- #
 dataOptions = pd.read_csv("nutrition.csv", index_col='Id', sep=';', encoding='utf-8')
 dataSortEner = dataOptions.sort_values(by="Energ_Kcal", ascending=False)
 dataSortProt = dataOptions.sort_values(by="Protéine", ascending=False)
 dataSortGras = dataOptions.sort_values(by="gras", ascending=False)
 dataSortChol = dataOptions.sort_values(by="Cholestérol", ascending=False)
 dataSortSodi = dataOptions.sort_values(by="Sodium", ascending=False)
-#dataCate = data["Catégorie"]
-#dataId = data["Id"]
-#----- Exemple de variables pour print une seule valeur en particulier. ----------#
-#var = dataCate[4]
-#var2 = dataId[4]
-#print(var2)
-#print(var)
+   # ---- Valeurs Option 3 ---- #
+dataEnTete = pd.read_csv("nutrition.csv",index_col='Id',sep=';', encoding='utf-8')
+   # ---- Valeurs Option 4 ---- #
+
+   # ---- Valeurs Option 5 ---- #
+
+   # ---- Valeurs Option 6 ---- #
 
 mainMenu()
