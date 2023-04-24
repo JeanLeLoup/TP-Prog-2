@@ -8,8 +8,7 @@ def mainMenu():
    print("5-Ajouter un aliment                                                     ****")
    print("6-Quitter                                                                ****")
    print("*****************************************************************************")
-   print("Veuillez entrer votre selection:")
-   val = (input())
+   val = (input("Veuillez entrer votre selection:"))
    if val == "1":
       option1()
    elif val == "2":
@@ -25,8 +24,7 @@ def mainMenu():
    else:
       print("oh no!")
    mainMenu()
-   print("Tapez une touche pour continuer.")
-   input()
+   input("Tapez une touche pour continuer:")
 def option1():
    print("yay 1!")
    print(dataSortId.to_string())
