@@ -126,7 +126,17 @@ def option4():
       if val_modifiable.lower() == "non":
          new_val = input("Entrez la nouvelle valeur du nutriment: ")
 def option5():
-   print("yay 5!")
+   dfNoId = pd.read_csv('NUTRITION.CSV', index_col=False, sep=";")
+   print("Format des données:")
+   print(dfNoId.dtypes)
+   new_data = {}
+   for column in dfNoId.columns:
+      if column != 'Id':
+         new_data[column] = input(f"Entrez la valeur pour {column}: ")
+ #  df = df._append(new_data, ignore_index=True)
+#   df = df.sort_values(by='ID')
+ #  print(df.to_string())
+ #  df.to_csv('NUTRITION5.CSV', index=False)
 def option6():
    print("Voulez-vous quitter (Oui/Non) ?")
    Reponse = input("-->")
@@ -137,7 +147,7 @@ def option6():
       print("Au revoir !")
       exit()
    else :
-      return
+      afficherMenu()
    # ---- Valeurs Option 1 ---- #
 global val
 data = pd.read_csv("nutrition.csv", index_col='Id', sep=';', encoding='utf-8')
@@ -151,5 +161,4 @@ dataSortGras = dataOptions.sort_values(by="gras", ascending=False)
 dataSortChol = dataOptions.sort_values(by="Cholestérol", ascending=False)
 dataSortSodi = dataOptions.sort_values(by="Sodium", ascending=False)
 # ------------------------------ Début Code ---------------------------------- #
-
 afficherMenu()
