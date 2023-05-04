@@ -1,10 +1,14 @@
+# -*- coding: utf-8 -*-
 import pandas as pd
+import numpy as np
+
+
 def mainMenu():
    print("*****************************************************************************")
    print("1-Afficher l’ensemble des aliments depuis le fichier Nutrition.CSV       ****")
    print("2-Afficher les aliments en fonction d’une valeur nutritive à la fois     ****")
-   print("3-Afficher les valeurs nutritives d’un aliment (Recherche par ID)        ****")
-   print("4-Modifier une valeur nutritive d’un aliment par ID )                    ****")
+   print("3-Afficher les valeurs nutritives d’un aliment (Recherche par Id)        ****")
+   print("4-Modifier une valeur nutritive d’un aliment par Id )                    ****")
    print("5-Ajouter un aliment                                                     ****")
    print("6-Quitter                                                                ****")
    print("*****************************************************************************")
@@ -65,13 +69,54 @@ def option2():
    #export_csv = dataFrmEnerg.to_csv(r'Pandaresult.csv')
 def option3():
    print("yay 3!")
-   val = input("Veuillez insérer la ID d’un aliment -->")
+   val = input("Veuillez insérer la Id d’un aliment -->")
    print("L’élément est trouvé!")
    print("***********************************************")
    print(dataEnTete.loc[int(val)])
    print("***********************************************")
+
+
 def option4():
-   print("yay 4!")
+   df = pd.read_csv("nutrition.csv", sep=";")
+   while True:
+      print("*MENU4*\n *Modification d’une valeur nutritive d’un aliment recherche par Id*")
+      print("\nVeuillez insérer l'Id du nutriment pour lequel vous voulez faire des modifications-->: ")
+      choix = input("#: ")
+      if int(choix) in df["Id"].values:
+         print(df.loc[df["Id"] == int(choix), ["Id", "Description"]])
+         print("Veuillez saisir le numéro correspondant du nutriment voulu!: ")
+         print("1- Energ_kcal")
+         print("2- Protéine")
+         print("3- gras")
+         print("4- Cholesterol")
+         print("5- Sodium")
+      else:
+         print("*****ATTENTION: Veuillez insérer un Id de nutriment valide! :ATTENTION*****\n")
+         continue
+
+      choix_nutriment =input()
+
+      if choix_nutriment == "1":
+         nutriment_select = "Energ_Kcal"
+      elif choix_nutriment =="2":
+         nutriment_select ="Protéine"
+      elif choix_nutriment == '3':
+         nutriment_select = 'gras'
+      elif choix_nutriment == '4':
+         nutriment_select = 'Cholestérol'
+      elif choix_nutriment == '5':
+         nutriment_select = 'Sodium'
+      else:
+         print("VEUILLEZ CHOISIR UN NUTRIMENT VALIDE")
+
+      valeur_choisi = df.loc[df['Id'] == int(choix), nutriment_select].values[0]
+      print("La valeur actuelle de {} est : {}".format(nutriment_select, valeur_choisi ))
+
+      val_modifiable = input("Voulez-vous conserver cette valeur (Oui) OU modifier la valeur (Non) --> ")
+      if val_modifiable.lower() == "non":
+         new_val = input("Entrez la nouvelle valeur du nutriment: ")
+
+
 def option5():
    print("yay 5!")
 def option6():
