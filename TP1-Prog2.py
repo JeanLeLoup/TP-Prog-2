@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 import pandas as pd
 import numpy as np
-
-
-def mainMenu():
+def afficherMenu():
    print("*****************************************************************************")
    print("1-Afficher l’ensemble des aliments depuis le fichier Nutrition.CSV       ****")
    print("2-Afficher les aliments en fonction d’une valeur nutritive à la fois     ****")
@@ -27,7 +25,7 @@ def mainMenu():
       option6()
    else:
       print("oh no!")
-   mainMenu()
+   afficherMenu()
    input("Tapez une touche pour continuer:")
 def option1():
    print("yay 1!")
@@ -61,21 +59,20 @@ def option2():
       dataFrmSodium = DataFrame(dataSortSodi, columns=['Catégorie', 'Description', 'Sodium'], )
       print(dataFrmSodium.to_string())
       dataFrmSodium.to_csv(r'nutrition_Sodium.csv')
-   # pour exportation ###################################
-   #from pandas import DataFrame
-   #dataFrmEnerg = DataFrame(dataSortId, columns=['Catégorie', 'Description', 'Energ_Kcal'], )
-   #print(dataFrmEnerg.to_string())
-   # chemin vers un fichier pour stocker les resultats
-   #export_csv = dataFrmEnerg.to_csv(r'Pandaresult.csv')
+
+# pour exportation ###################################
+#from pandas import DataFrame
+#dataFrmEnerg = DataFrame(dataSortId, columns=['Catégorie', 'Description', 'Energ_Kcal'], )
+#print(dataFrmEnerg.to_string())
+# chemin vers un fichier pour stocker les resultats
+#export_csv = dataFrmEnerg.to_csv(r'Pandaresult.csv')
 def option3():
    print("yay 3!")
    val = input("Veuillez insérer la Id d’un aliment -->")
    print("L’élément est trouvé!")
    print("***********************************************")
-   print(dataEnTete.loc[int(val)])
+   print(data.loc[int(val)])
    print("***********************************************")
-
-
 def option4():
    df = pd.read_csv("nutrition.csv", sep=";")
    while True:
@@ -115,19 +112,22 @@ def option4():
       val_modifiable = input("Voulez-vous conserver cette valeur (Oui) OU modifier la valeur (Non) --> ")
       if val_modifiable.lower() == "non":
          new_val = input("Entrez la nouvelle valeur du nutriment: ")
-
-
 def option5():
    print("yay 5!")
 def option6():
-   print("vous avez quitté!")
-# ------------------------------ Début Code ---------------------------------- #
-global val
-#global data
-#global dataSortId
+   print("Voulez-vous quitter (Oui/Non) ?")
+   Reponse = input("-->")
+   if Reponse == "oui":
+         print("Au revoir !")
+   elif Reponse == "Oui":
+      print("Au revoir !")
+   else :
+      return
    # ---- Valeurs Option 1 ---- #
+global val
 data = pd.read_csv("nutrition.csv", index_col='Id', sep=';', encoding='utf-8')
 dataSortId = data.sort_values(by="Id", ascending=True)
+tableau = data.values.tolist()
    # ---- Valeurs Option 2 ---- #
 dataOptions = pd.read_csv("nutrition.csv", index_col='Id', sep=';', encoding='utf-8')
 dataSortEner = dataOptions.sort_values(by="Energ_Kcal", ascending=False)
@@ -135,12 +135,5 @@ dataSortProt = dataOptions.sort_values(by="Protéine", ascending=False)
 dataSortGras = dataOptions.sort_values(by="gras", ascending=False)
 dataSortChol = dataOptions.sort_values(by="Cholestérol", ascending=False)
 dataSortSodi = dataOptions.sort_values(by="Sodium", ascending=False)
-   # ---- Valeurs Option 3 ---- #
-dataEnTete = pd.read_csv("nutrition.csv",index_col='Id',sep=';', encoding='utf-8')
-   # ---- Valeurs Option 4 ---- #
-
-   # ---- Valeurs Option 5 ---- #
-
-   # ---- Valeurs Option 6 ---- #
-
-mainMenu()
+# ------------------------------ Début Code ---------------------------------- #
+afficherMenu()
