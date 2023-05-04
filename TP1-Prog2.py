@@ -124,6 +124,7 @@ def option6():
    else :
       return
    # ---- Valeurs Option 1 ---- #
+global val
 data = pd.read_csv("nutrition.csv", index_col='Id', sep=';', encoding='utf-8')
 dataSortId = data.sort_values(by="Id", ascending=True)
 tableau = data.values.tolist()
