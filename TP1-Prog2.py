@@ -90,6 +90,7 @@ def option4():
          print("3- gras")
          print("4- Cholesterol")
          print("5- Sodium")
+
       else:
          print("*****ATTENTION: Veuillez insérer un Id de nutriment valide! :ATTENTION*****\n")
          continue
@@ -106,6 +107,8 @@ def option4():
          nutriment_select = 'Cholestérol'
       elif choix_nutriment == '5':
          nutriment_select = 'Sodium'
+      elif choix_nutriment == '6':
+         break
       else:
          print("VEUILLEZ CHOISIR UN NUTRIMENT VALIDE")
 
@@ -115,8 +118,13 @@ def option4():
       val_modifiable = input("Voulez-vous conserver cette valeur (Oui) OU modifier la valeur (Non) --> ")
       if val_modifiable.lower() == "non":
          new_val = input("Entrez la nouvelle valeur du nutriment: ")
+      df.loc[df['Id'] == int(choix), nutriment_select] = new_val
+      df.to_csv("nutrition.csv", sep=";")
+      choix_menu = input("Voulez-vous retourner au menu principal (Oui) ou quitter le programme (Non)? ")
+      if choix_menu.lower() == "non":
+         break
 
-
+   mainMenu()
 def option5():
    print("yay 5!")
 def option6():
