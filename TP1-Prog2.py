@@ -77,7 +77,7 @@ def option3():
       numeroDeIDValide()
       afficherMenu()
 def option4():
-   df = pd.read_csv("nutrition.csv", sep=";")
+   df = pd.read_csv("nutrition.csv", sep=";", encoding='utf-8')
    while True:
       print("*MENU4*\n *Modification d’une valeur nutritive d’un aliment recherche par Id*")
       print("\nVeuillez insérer l'Id du nutriment pour lequel vous voulez faire des modifications-->: ")
@@ -151,17 +151,20 @@ def option6():
    # ---- Valeurs Option 1 ---- #
 
 
-
-
 def numeroDeIDValide(id_num):
-   df = pd.read_csv('nutrition.csv', sep=';')
+   df = pd.read_csv('nutrition.csv', sep=';', encoding='utf-8')
    return id_num in df['Id'].values
    id_num = int(input("Veuillez entrer un numéro d'identification: "))
    print("L'ID est valide:", numeroDeIDValide(id_num))
 
 
+def valeurNutritiveValides(valeur):
+   if 0 <= valeur <= 10000:
+      return True
+   else:
+      return False
 
-global val
+global valeur
 data = pd.read_csv("nutrition.csv", index_col='Id', sep=';', encoding='utf-8')
 dataSortId = data.sort_values(by="Id", ascending=True)
 tableau = data.values.tolist()
