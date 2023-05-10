@@ -82,9 +82,11 @@ def option4():
       print("*MENU4*\n *Modification d’une valeur nutritive d’un aliment recherche par Id*")
       print("\nVeuillez insérer l'Id du nutriment pour lequel vous voulez faire des modifications-->: ")
       choix = input("#: ")
-      numeroDeIDValide(int(choix))
-      if int(choix) in df["Id"].values:
+      is_valid_id = numeroDeIDValide(int(choix))
+      print(f"Is valid ID: {is_valid_id}")
+      if is_valid_id:
          print(df.loc[df["Id"] == int(choix), ["Id", "Description"]])
+
          print("Veuillez saisir le numéro correspondant du nutriment voulu!: ")
          print("1- Energ_kcal")
          print("2- Protéine")
@@ -154,8 +156,6 @@ def option6():
 def numeroDeIDValide(id_num):
    df = pd.read_csv('nutrition.csv', sep=';', encoding='utf-8')
    return id_num in df['Id'].values
-   id_num = int(input("Veuillez entrer un numéro d'identification: "))
-   print("L'ID est valide:", numeroDeIDValide(id_num))
 
 
 def valeurNutritiveValides(valeur):
