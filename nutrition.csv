@@ -1,4 +1,4 @@
-﻿Id;Catégorie;Description;Energ_Kcal;Protéine;gras;Cholestérol;Sodium
+Id;Catégorie;Description;Energ_Kcal;Protéine;gras;Cholestérol;Sodium
 21;Croquettes;Chicken McNuggets  (20 piece);1030;49;65;170;2280
 57;Sandwich;Grilled Chicken Flatbread;520;28;22;70;1590
 126;Déjeuners;Steak Egg & Cheese Bagel;640;31;31;265;1540
@@ -101,7 +101,7 @@
 68;Croquettes;Honey Mustard Sauce;50;0;4;10;95
 127;Desserts;Strawberry Sundae;290;7;7;30;95
 119;Desserts;Snack Size Fruit 'n Yogurt Parfait¯;160;4;2;5;85
-123;Breuvages;Sprite  (Medium) ;210;0;0;0;80
+123;Breuvages;Sprite  (Medium) ;210;0;9999;0;80
 46;Breuvages;Diet Coke  (Super Size ) ;0;0;0;0;75
 66;Breuvages;Hi-C  Orange Drink (Super Size ) ;460;0;0;0;75
 134;Desserts;Vanilla Reduced Fat Ice Cream Cone;150;4;4;20;75
