@@ -1,0 +1,280 @@
+,Id,Catégorie,Description,Energ_Kcal,Protéine,gras,Cholestérol,Sodium
+0,21.0,Croquettes,Chicken McNuggets  (20 piece),1030,49,65,170,2280
+1,57.0,Sandwich,Grilled Chicken Flatbread,520,28,22,70,1590
+2,126.0,Déjeuners,Steak Egg & Cheese Bagel,640,31,31,265,1540
+3,120.0,Déjeuners,Spanish Omelete Bagel,710,27,40,275,1520
+4,59.0,Déjeuners,Ham Egg & Cheese Bagel,550,26,23,255,1500
+5,48.0,Sandwich,Double Quarter Pounder  with Cheese ,760,46,48,165,1450
+6,8.0,Déjeuners,Big Déjeuners,710,24,48,455,1430
+7,2.0,Déjeuners,Bacon Egg & Cheese Biscuit,480,21,31,250,1360
+8,111.0,Déjeuners,Sausage Egg & Cheese McGriddles™,550,20,33,260,1290
+9,3.0,Déjeuners,Bacon Egg & Cheese McGriddles™,450,19,23,240,1270
+10,102.0,Sandwich,Quarter Pounder  with Cheese ,530,28,30,95,1250
+11,47.0,Sandwich,Double Cheeseburger,480,25,27,85,1220
+12,41.0,Salades,Crispy Chicken California Cobb Salad,380,27,23,125,1170
+13,20.0,Croquettes,Chicken McNuggets  (10 piece),510,25,33,85,1140
+14,38.0,Sandwich,Crispy Chicken,500,22,26,50,1100
+15,9.0,Sandwich,Big Mac ,580,24,33,85,1050
+16,39.0,Salades,Crispy Chicken Bacon Ranch Salad,370,26,21,65,1040
+17,11.0,Sandwich,Big N' Tasty  with Cheese,580,26,37,95,1030
+18,109.0,Déjeuners,Sausage Biscuit with Egg,490,16,33,245,1010
+19,112.0,Déjeuners,Sausage McGriddles™,420,11,23,35,970
+20,56.0,Salades,Grilled Chicken California Cobb Salad,280,30,14,130,960
+21,93.0,Vinaigrettes à salades,Newman's Own  Light Balsamic Vinaigrette?,90,0,8,0,950
+22,108.0,Déjeuners,Sausage Biscuit,410,10,28,35,930
+23,114.0,Déjeuners,Sausage McMuffin  with Egg,450,20,28,260,930
+24,19.0,Sandwich,Chicken McGrill ,400,25,17,60,890
+25,40.0,Salades,Crispy Chicken Caesar Salad,310,23,16,50,890
+26,49.0,Déjeuners,Egg McMuffin ,300,18,12,235,840
+27,84.0,Sandwich,McChicken ,430,14,23,45,840
+28,54.0,Salades,Grilled Chicken Bacon Ranch Salad,270,28,13,75,830
+29,69.0,Sandwich,Hot 'n Spicy McChicken ,450,15,26,45,830
+30,138.0,Desserts,Vanilla Triple Thick™ Shake (32 fl oz cup),1140,28,32,135,810
+31,18.0,Sandwich,Cheeseburger,330,15,14,45,800
+32,10.0,Sandwich,Big N' Tasty ,530,24,32,80,790
+33,113.0,Déjeuners,Sausage McMuffin ,370,14,23,50,790
+34,101.0,Sandwich,Quarter Pounder  ,420,23,21,70,780
+35,73.0,Déjeuners,Hotcakes (margarine 2 pats & syrup),600,9,17,20,770
+36,51.0,Sandwich,Filet-O-Fish ,470,15,26,50,730
+37,23.0,Croquettes,Chicken McNuggets  (6 piece),310,15,20,50,680
+38,55.0,Salades,Grilled Chicken Caesar Salad,210,26,7,60,680
+39,110.0,Déjeuners,Sausage Déjeuners Burrito ,290,13,16,170,680
+40,12.0,Déjeuners,Biscuit,240,4,11,0,640
+41,60.0,Sandwich,Hamburger,280,12,10,30,560
+42,28.0,Desserts,Chocolate Triple Thick™ Shake (32 fl oz cup),1150,30,33,135,550
+43,94.0,Vinaigrettes à salades,Newman's Own  Ranch Dressing,290,1,30,20,530
+44,137.0,Desserts,Vanilla Triple Thick™ Shake (21 fl oz cup),750,18,21,90,530
+45,5.0,Déjeuners,Bagel (plain),260,9,1,0,520
+46,92.0,Vinaigrettes à salades,Newman's Own  Creamy Caesar Dressing,190,2,18,20,500
+47,22.0,Croquettes,Chicken McNuggets  (4 piece),210,10,13,35,460
+48,17.0,Salades,California Cobb Salad (without chicken),160,11,11,85,450
+49,91.0,Vinaigrettes à salades,Newman's Own  Cobb Dressing,120,1,9,10,440
+50,100.0,Desserts,Oreo  McFlurry™ (16 fl oz cup),820,22,29,100,420
+51,136.0,Desserts,Vanilla Triple Thick™ Shake (16 fl oz cup),570,14,16,65,400
+52,106.0,Desserts,Raspberry Triple Thick™ Shake (32 fl oz cup) ,1120,28,32,135,390
+53,132.0,Frites,Super Size  Frites,610,9,29,0,390
+54,131.0,Desserts,Strawberry Triple Thick™ Shake (32 fl oz cup),1120,28,32,135,380
+55,15.0,Desserts,Butterfinger  McFlurry™ (16 fl oz cup),900,23,31,100,370
+56,27.0,Desserts,Chocolate Triple Thick™ Shake (21 fl oz cup),750,19,22,90,360
+57,80.0,Frites,Large Frites,540,8,26,0,350
+58,90.0,Desserts,Nestle Crunch  McFlurry™ (16 fl oz cup),920,23,35,110,340
+59,61.0,Déjeuners,Hash Browns,130,1,8,0,330
+60,4.0,Salades,Bacon Ranch Salad (without chicken),140,9,10,25,310
+61,83.0,Desserts,M&M  McFlurry™ (16 fl oz cup),910,23,33,105,300
+62,135.0,Desserts,Vanilla Triple Thick™ Shake (12 fl oz cup),430,11,12,50,300
+63,88.0,Frites,Medium Frites,450,6,22,0,290
+64,107.0,Déjeuners,Sausage,170,6,16,35,290
+65,26.0,Desserts,Chocolate Triple Thick™ Shake (16 fl oz cup),580,15,17,65,280
+66,99.0,Desserts,Oreo  McFlurry™ (12 fl oz cup),570,15,20,70,280
+67,50.0,Déjeuners,English Muffin,150,5,2,0,270
+68,14.0,Desserts,Butterfinger   McFlurry ™ (12 fl oz cup),620,16,22,70,260
+69,105.0,Desserts,Raspberry Triple Thick™ Shake (21 fl oz cup) ,730,19,21,90,260
+70,7.0,Croquettes,Barbeque Sauce,45,0,0,0,250
+71,29.0,Déjeuners,Cinnamon Roll ,340,5,15,35,250
+72,86.0,Desserts,McDonaldland  Cookies,230,3,8,0,250
+73,130.0,Desserts,Strawberry Triple Thick™ Shake (21 fl oz cup),730,19,21,90,250
+74,53.0,Desserts,Fruit 'n Yogurt Parfait¯,380,10,5,15,240
+75,72.0,Croquettes,Hot Mustard Sauce,60,1,3,5,240
+76,89.0,Desserts,Nestle Crunch  McFlurry™ (12 fl oz cup),630,16,24,75,230
+77,25.0,Desserts,Chocolate Triple Thick™ Shake (12 fl oz cup),430,11,12,50,210
+78,82.0,Desserts,M&M  McFlurry™ (12 fl oz cup),630,16,23,75,210
+79,87.0,Frites,McValue  Frites,320,5,16,0,210
+80,6.0,Desserts,Baked Apple Pie,260,3,13,0,200
+81,104.0,Desserts,Raspberry Triple Thick™ Shake (16 fl oz cup) ,560,14,16,65,190
+82,129.0,Desserts,Strawberry Triple Thick™ Shake (16 fl oz cup),560,14,16,65,190
+83,70.0,Desserts,Hot Caramel Sundae,360,7,10,35,180
+84,16.0,Salades,Caesar Salad (without chicken),90,7,4,10,170
+85,71.0,Desserts,Hot Fudge Sundae,340,8,12,30,170
+86,85.0,Desserts,McDonaldland  Chocolate Chip Cookies,280,3,14,40,170
+87,115.0,Déjeuners,Scrambled Eggs (2),160,13,11,425,170
+88,24.0,Desserts,Chocolate Chip Cookie ,170,2,9,5,150
+89,103.0,Desserts,Raspberry Triple Thick™ Shake (12 fl oz cup) ,420,11,12,50,150
+90,125.0,Breuvages,Sprite  (Super Size ) ,410,0,0,0,150
+91,13.0,Salades,Butter Garlic Croutons,50,1,1,0,140
+92,128.0,Desserts,Strawberry Triple Thick™ Shake (12 fl oz cup),420,11,12,50,140
+93,133.0,Croquettes,Sweet 'N Sour Sauce,50,0,0,0,140
+94,117.0,Frites,Small Frites,210,3,10,0,135
+95,1.0,Breuvages,Lowfat Milk,100,8,2,10,115
+96,52.0,Desserts,Fruit 'n Yogurt Parfait (w/o granola)¯,280,8,4,15,115
+97,122.0,Breuvages,Sprite  (Large) ,310,0,0,0,115
+98,81.0,Croquettes,Light Mayonnaise?,45,0,4,10,100
+99,68.0,Croquettes,Honey Mustard Sauce,50,0,4,10,95
+100,127.0,Desserts,Strawberry Sundae,290,7,7,30,95
+101,119.0,Desserts,Snack Size Fruit 'n Yogurt Parfait¯,160,4,2,5,85
+102,123.0,Breuvages,Sprite  (Medium) ,210,0,9999,0,80
+103,46.0,Breuvages,Diet Coke  (Super Size ) ,0,0,0,0,75
+104,66.0,Breuvages,Hi-C  Orange Drink (Super Size ) ,460,0,0,0,75
+105,134.0,Desserts,Vanilla Reduced Fat Ice Cream Cone,150,4,4,20,75
+106,43.0,Breuvages,Diet Coke  (Large) ,0,0,0,0,60
+107,63.0,Breuvages,Hi-C  Orange Drink (Large) ,350,0,0,0,60
+108,95.0,Desserts,Nuts (for Sundaes),40,2,3,0,55
+109,118.0,Desserts,Snack Size Fruit 'n Yogurt Parfait (w/o granola)¯,130,4,2,5,55
+110,124.0,Breuvages,Sprite  (Small) ,150,0,0,0,55
+111,34.0,Breuvages,Coca-Cola Classic  (Super Size ) ,410,0,0,0,40
+112,44.0,Breuvages,Diet Coke  (Medium) ,0,0,0,0,40
+113,64.0,Breuvages,Hi-C  Orange Drink (Medium) ,240,0,0,0,40
+114,121.0,Breuvages,Sprite  (Child) ,110,0,0,0,40
+115,31.0,Breuvages,Coca-Cola Classic  (Large) ,310,0,0,0,30
+116,45.0,Breuvages,Diet Coke  (Small) ,0,0,0,0,30
+117,65.0,Breuvages,Hi-C  Orange Drink (Small) ,160,0,0,0,30
+118,78.0,Breuvages,Iced Tea (Super Size ),0,0,0,0,25
+119,32.0,Breuvages,Coca-Cola Classic  (Medium) ,210,0,0,0,20
+120,42.0,Breuvages,Diet Coke  (Child) ,0,0,0,0,20
+121,62.0,Breuvages,Hi-C  Orange Drink (Child) ,120,0,0,0,20
+122,75.0,Breuvages,Iced Tea (Large),0,0,0,0,20
+123,79.0,Desserts,Kiddie Cone,45,1,1,5,20
+124,33.0,Breuvages,Coca-Cola Classic  (Small) ,150,0,0,0,15
+125,76.0,Breuvages,Iced Tea (Medium),0,0,0,0,15
+126,30.0,Breuvages,Coca-Cola Classic  (Child) ,110,0,0,0,10
+127,35.0,Breuvages,Coffee (Large),10,0,0,0,10
+128,77.0,Breuvages,Iced Tea (Small),0,0,0,0,10
+129,98.0,Breuvages,Orange Juice (21 fl oz cup),250,4,0,0,10
+130,116.0,Salades,Side Salad,15,1,0,0,10
+131,36.0,Breuvages,Coffee (Medium),5,0,0,0,5
+132,74.0,Breuvages,Iced Tea (Child),0,0,0,0,5
+133,96.0,Breuvages,Orange Juice (12 fl oz cup),140,2,0,0,5
+134,97.0,Breuvages,Orange Juice (16 fl oz cup),180,3,0,0,5
+135,37.0,Breuvages,Coffee (Small),0,0,0,0,0
+136,58.0,Breuvages,Half & Half Creamer,15,0,1,5,0
+137,67.0,Croquettes,Honey,45,0,0,0,0
+138,,123,123,123,123,123,123,123
+Id,Catégorie,Description,Energ_Kcal,Protéine,gras,Cholestérol,Sodium
+21.0,Croquettes,Chicken McNuggets  (20 piece),1030,49,65,170,2280
+57.0,Sandwich,Grilled Chicken Flatbread,520,28,22,70,1590
+126.0,Déjeuners,Steak Egg & Cheese Bagel,640,31,31,265,1540
+120.0,Déjeuners,Spanish Omelete Bagel,710,27,40,275,1520
+59.0,Déjeuners,Ham Egg & Cheese Bagel,550,26,23,255,1500
+48.0,Sandwich,Double Quarter Pounder  with Cheese ,760,46,48,165,1450
+8.0,Déjeuners,Big Déjeuners,710,24,48,455,1430
+2.0,Déjeuners,Bacon Egg & Cheese Biscuit,480,21,31,250,1360
+111.0,Déjeuners,Sausage Egg & Cheese McGriddles™,550,20,33,260,1290
+3.0,Déjeuners,Bacon Egg & Cheese McGriddles™,450,19,23,240,1270
+102.0,Sandwich,Quarter Pounder  with Cheese ,530,28,30,95,1250
+47.0,Sandwich,Double Cheeseburger,480,25,27,85,1220
+41.0,Salades,Crispy Chicken California Cobb Salad,380,27,23,125,1170
+20.0,Croquettes,Chicken McNuggets  (10 piece),510,25,33,85,1140
+38.0,Sandwich,Crispy Chicken,500,22,26,50,1100
+9.0,Sandwich,Big Mac ,580,24,33,85,1050
+39.0,Salades,Crispy Chicken Bacon Ranch Salad,370,26,21,65,1040
+11.0,Sandwich,Big N' Tasty  with Cheese,580,26,37,95,1030
+109.0,Déjeuners,Sausage Biscuit with Egg,490,16,33,245,1010
+112.0,Déjeuners,Sausage McGriddles™,420,11,23,35,970
+56.0,Salades,Grilled Chicken California Cobb Salad,280,30,14,130,960
+93.0,Vinaigrettes à salades,Newman's Own  Light Balsamic Vinaigrette?,90,0,8,0,950
+108.0,Déjeuners,Sausage Biscuit,410,10,28,35,930
+114.0,Déjeuners,Sausage McMuffin  with Egg,450,20,28,260,930
+19.0,Sandwich,Chicken McGrill ,400,25,17,60,890
+40.0,Salades,Crispy Chicken Caesar Salad,310,23,16,50,890
+49.0,Déjeuners,Egg McMuffin ,300,18,12,235,840
+84.0,Sandwich,McChicken ,430,14,23,45,840
+54.0,Salades,Grilled Chicken Bacon Ranch Salad,270,28,13,75,830
+69.0,Sandwich,Hot 'n Spicy McChicken ,450,15,26,45,830
+138.0,Desserts,Vanilla Triple Thick™ Shake (32 fl oz cup),1140,28,32,135,810
+18.0,Sandwich,Cheeseburger,330,15,14,45,800
+10.0,Sandwich,Big N' Tasty ,530,24,32,80,790
+113.0,Déjeuners,Sausage McMuffin ,370,14,23,50,790
+101.0,Sandwich,Quarter Pounder  ,420,23,21,70,780
+73.0,Déjeuners,Hotcakes (margarine 2 pats & syrup),600,9,17,20,770
+51.0,Sandwich,Filet-O-Fish ,470,15,26,50,730
+23.0,Croquettes,Chicken McNuggets  (6 piece),310,15,20,50,680
+55.0,Salades,Grilled Chicken Caesar Salad,210,26,7,60,680
+110.0,Déjeuners,Sausage Déjeuners Burrito ,290,13,16,170,680
+12.0,Déjeuners,Biscuit,240,4,11,0,640
+60.0,Sandwich,Hamburger,280,12,10,30,560
+28.0,Desserts,Chocolate Triple Thick™ Shake (32 fl oz cup),1150,30,33,135,550
+94.0,Vinaigrettes à salades,Newman's Own  Ranch Dressing,290,1,30,20,530
+137.0,Desserts,Vanilla Triple Thick™ Shake (21 fl oz cup),750,18,21,90,530
+5.0,Déjeuners,Bagel (plain),260,9,1,0,520
+92.0,Vinaigrettes à salades,Newman's Own  Creamy Caesar Dressing,190,2,18,20,500
+22.0,Croquettes,Chicken McNuggets  (4 piece),210,10,13,35,460
+17.0,Salades,California Cobb Salad (without chicken),160,11,11,85,450
+91.0,Vinaigrettes à salades,Newman's Own  Cobb Dressing,120,1,9,10,440
+100.0,Desserts,Oreo  McFlurry™ (16 fl oz cup),820,22,29,100,420
+136.0,Desserts,Vanilla Triple Thick™ Shake (16 fl oz cup),570,14,16,65,400
+106.0,Desserts,Raspberry Triple Thick™ Shake (32 fl oz cup) ,1120,28,32,135,390
+132.0,Frites,Super Size  Frites,610,9,29,0,390
+131.0,Desserts,Strawberry Triple Thick™ Shake (32 fl oz cup),1120,28,32,135,380
+15.0,Desserts,Butterfinger  McFlurry™ (16 fl oz cup),900,23,31,100,370
+27.0,Desserts,Chocolate Triple Thick™ Shake (21 fl oz cup),750,19,22,90,360
+80.0,Frites,Large Frites,540,8,26,0,350
+90.0,Desserts,Nestle Crunch  McFlurry™ (16 fl oz cup),920,23,35,110,340
+61.0,Déjeuners,Hash Browns,130,1,8,0,330
+4.0,Salades,Bacon Ranch Salad (without chicken),140,9,10,25,310
+83.0,Desserts,M&M  McFlurry™ (16 fl oz cup),910,23,33,105,300
+135.0,Desserts,Vanilla Triple Thick™ Shake (12 fl oz cup),430,11,12,50,300
+88.0,Frites,Medium Frites,450,6,22,0,290
+107.0,Déjeuners,Sausage,170,6,16,35,290
+26.0,Desserts,Chocolate Triple Thick™ Shake (16 fl oz cup),580,15,17,65,280
+99.0,Desserts,Oreo  McFlurry™ (12 fl oz cup),570,15,20,70,280
+50.0,Déjeuners,English Muffin,150,5,2,0,270
+14.0,Desserts,Butterfinger   McFlurry ™ (12 fl oz cup),620,16,22,70,260
+105.0,Desserts,Raspberry Triple Thick™ Shake (21 fl oz cup) ,730,19,21,90,260
+7.0,Croquettes,Barbeque Sauce,45,0,0,0,250
+29.0,Déjeuners,Cinnamon Roll ,340,5,15,35,250
+86.0,Desserts,McDonaldland  Cookies,230,3,8,0,250
+130.0,Desserts,Strawberry Triple Thick™ Shake (21 fl oz cup),730,19,21,90,250
+53.0,Desserts,Fruit 'n Yogurt Parfait¯,380,10,5,15,240
+72.0,Croquettes,Hot Mustard Sauce,60,1,3,5,240
+89.0,Desserts,Nestle Crunch  McFlurry™ (12 fl oz cup),630,16,24,75,230
+25.0,Desserts,Chocolate Triple Thick™ Shake (12 fl oz cup),430,11,12,50,210
+82.0,Desserts,M&M  McFlurry™ (12 fl oz cup),630,16,23,75,210
+87.0,Frites,McValue  Frites,320,5,16,0,210
+6.0,Desserts,Baked Apple Pie,260,3,13,0,200
+104.0,Desserts,Raspberry Triple Thick™ Shake (16 fl oz cup) ,560,14,16,65,190
+129.0,Desserts,Strawberry Triple Thick™ Shake (16 fl oz cup),560,14,16,65,190
+70.0,Desserts,Hot Caramel Sundae,360,7,10,35,180
+16.0,Salades,Caesar Salad (without chicken),90,7,4,10,170
+71.0,Desserts,Hot Fudge Sundae,340,8,12,30,170
+85.0,Desserts,McDonaldland  Chocolate Chip Cookies,280,3,14,40,170
+115.0,Déjeuners,Scrambled Eggs (2),160,13,11,425,170
+24.0,Desserts,Chocolate Chip Cookie ,170,2,9,5,150
+103.0,Desserts,Raspberry Triple Thick™ Shake (12 fl oz cup) ,420,11,12,50,150
+125.0,Breuvages,Sprite  (Super Size ) ,410,0,0,0,150
+13.0,Salades,Butter Garlic Croutons,50,1,1,0,140
+128.0,Desserts,Strawberry Triple Thick™ Shake (12 fl oz cup),420,11,12,50,140
+133.0,Croquettes,Sweet 'N Sour Sauce,50,0,0,0,140
+117.0,Frites,Small Frites,210,3,10,0,135
+1.0,Breuvages,Lowfat Milk,100,8,2,10,115
+52.0,Desserts,Fruit 'n Yogurt Parfait (w/o granola)¯,280,8,4,15,115
+122.0,Breuvages,Sprite  (Large) ,310,0,0,0,115
+81.0,Croquettes,Light Mayonnaise?,45,0,4,10,100
+68.0,Croquettes,Honey Mustard Sauce,50,0,4,10,95
+127.0,Desserts,Strawberry Sundae,290,7,7,30,95
+119.0,Desserts,Snack Size Fruit 'n Yogurt Parfait¯,160,4,2,5,85
+123.0,Breuvages,Sprite  (Medium) ,210,0,9999,0,80
+46.0,Breuvages,Diet Coke  (Super Size ) ,0,0,0,0,75
+66.0,Breuvages,Hi-C  Orange Drink (Super Size ) ,460,0,0,0,75
+134.0,Desserts,Vanilla Reduced Fat Ice Cream Cone,150,4,4,20,75
+43.0,Breuvages,Diet Coke  (Large) ,0,0,0,0,60
+63.0,Breuvages,Hi-C  Orange Drink (Large) ,350,0,0,0,60
+95.0,Desserts,Nuts (for Sundaes),40,2,3,0,55
+118.0,Desserts,Snack Size Fruit 'n Yogurt Parfait (w/o granola)¯,130,4,2,5,55
+124.0,Breuvages,Sprite  (Small) ,150,0,0,0,55
+34.0,Breuvages,Coca-Cola Classic  (Super Size ) ,410,0,0,0,40
+44.0,Breuvages,Diet Coke  (Medium) ,0,0,0,0,40
+64.0,Breuvages,Hi-C  Orange Drink (Medium) ,240,0,0,0,40
+121.0,Breuvages,Sprite  (Child) ,110,0,0,0,40
+31.0,Breuvages,Coca-Cola Classic  (Large) ,310,0,0,0,30
+45.0,Breuvages,Diet Coke  (Small) ,0,0,0,0,30
+65.0,Breuvages,Hi-C  Orange Drink (Small) ,160,0,0,0,30
+78.0,Breuvages,Iced Tea (Super Size ),0,0,0,0,25
+32.0,Breuvages,Coca-Cola Classic  (Medium) ,210,0,0,0,20
+42.0,Breuvages,Diet Coke  (Child) ,0,0,0,0,20
+62.0,Breuvages,Hi-C  Orange Drink (Child) ,120,0,0,0,20
+75.0,Breuvages,Iced Tea (Large),0,0,0,0,20
+79.0,Desserts,Kiddie Cone,45,1,1,5,20
+33.0,Breuvages,Coca-Cola Classic  (Small) ,150,0,0,0,15
+76.0,Breuvages,Iced Tea (Medium),0,0,0,0,15
+30.0,Breuvages,Coca-Cola Classic  (Child) ,110,0,0,0,10
+35.0,Breuvages,Coffee (Large),10,0,0,0,10
+77.0,Breuvages,Iced Tea (Small),0,0,0,0,10
+98.0,Breuvages,Orange Juice (21 fl oz cup),250,4,0,0,10
+116.0,Salades,Side Salad,15,1,0,0,10
+36.0,Breuvages,Coffee (Medium),5,0,0,0,5
+74.0,Breuvages,Iced Tea (Child),0,0,0,0,5
+96.0,Breuvages,Orange Juice (12 fl oz cup),140,2,0,0,5
+97.0,Breuvages,Orange Juice (16 fl oz cup),180,3,0,0,5
+37.0,Breuvages,Coffee (Small),0,0,0,0,0
+58.0,Breuvages,Half & Half Creamer,15,0,1,5,0
+67.0,Croquettes,Honey,45,0,0,0,0
+,123,123,123,123,123,123,123
