@@ -76,21 +76,13 @@ def option3():
    else:
       numeroDeIDValide()
       afficherMenu()
-def numeroDeIDValide():
-   print("*****ATTENTION: Veuillez réessayer en insérant un Id valide ou retourner au menu principal avec la touche 'R' :ATTENTION*****")
-   val = input('Saisir choix:')
-   if val == 'r':
-      afficherMenu()
-   elif val == 'R':
-      afficherMenu()
-   else:
-      option3()
 def option4():
    df = pd.read_csv("nutrition.csv", sep=";")
    while True:
       print("*MENU4*\n *Modification d’une valeur nutritive d’un aliment recherche par Id*")
       print("\nVeuillez insérer l'Id du nutriment pour lequel vous voulez faire des modifications-->: ")
       choix = input("#: ")
+      numeroDeIDValide(int(choix))
       if int(choix) in df["Id"].values:
          print(df.loc[df["Id"] == int(choix), ["Id", "Description"]])
          print("Veuillez saisir le numéro correspondant du nutriment voulu!: ")
@@ -157,11 +149,18 @@ def option6():
    else :
       afficherMenu()
    # ---- Valeurs Option 1 ---- #
+
+
+
+
 def numeroDeIDValide(id_num):
    df = pd.read_csv('nutrition.csv', sep=';')
    return id_num in df['Id'].values
    id_num = int(input("Veuillez entrer un numéro d'identification: "))
-   print(numeroDeIDValide(id_num))
+   print("L'ID est valide:", numeroDeIDValide(id_num))
+
+
+
 global val
 data = pd.read_csv("nutrition.csv", index_col='Id', sep=';', encoding='utf-8')
 dataSortId = data.sort_values(by="Id", ascending=True)
