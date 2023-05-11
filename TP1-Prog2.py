@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
+import csv
 import pandas as pd
-import numpy as np
 def afficherMenu():
    print("*****************************************************************************")
    print("1-Afficher l’ensemble des aliments depuis le fichier Nutrition.CSV       ****")
@@ -135,17 +135,17 @@ def option4():
       else:
          afficherMenu()
 def option5():
-   dfNoId = pd.read_csv('NUTRITION.CSV', index_col=False, sep=";")
-   print("Format des données:")
-   print(dfNoId.dtypes)
-   new_data = {}
-   for column in dfNoId.columns:
-      if column != 'Id':
-         new_data[column] = input(f"Entrez la valeur pour {column}: ")
-   dfNoId = dfNoId._append(new_data, ignore_index=True)
-#   df = dfNoId.sort_values(by='ID')
-#   print(dfNoId.to_string())
-   dfNoId.to_csv('NUTRITION5.CSV', index=False, mode = 'a')
+   print("Veuillez insérer un nouvel aliment sous cette forme : ")
+   print("Catégorie;Description;Energ_Kcal;Protéine;gras;Cholestérol;Sodium")
+   nouvelle_entree = input()
+   nouvelle_ligne = [str(get_nouvel_id()), *nouvelle_entree.split(";")]
+   with open("nutrition.csv", "a", newline="") as f:
+      writer = csv.writer(f, delimiter=";")
+   writer.writerow(nouvelle_ligne)
+   print("Validation de la nouvelle entrée --> OK")
+   trier_fichier_par_id()
+   print("Affichage et enregistrement --> OK")
+   afficher_fichier_nutrition()
 def option6():
    print("Voulez-vous quitter (Oui/Non) ?")
    Reponse = input("-->")
@@ -157,19 +157,41 @@ def option6():
       exit()
    else :
       afficherMenu()
+
+
+
    # ---- Valeurs Option 1 ---- #
-
-
 def numeroDeIDValide(id_num):
    df = pd.read_csv('nutrition.csv', sep=';', encoding='utf-8')
    return id_num in df['Id'].values
+def trier_fichier_par_id():
+   with open("nutrition.csv", "r", newline="") as f:
+      reader = csv.reader(f, delimiter=";")
+      lignes = list(reader)
+   lignes_triees = sorted(lignes[1:], key=lambda x: int(x[0]))
+   lignes_triees.insert(0, lignes[0])
+   with open("nutrition.csv", "w", newline="") as f:
+      writer = csv.writer(f, delimiter=";")
+      writer.writerows(lignes_triees)
+def afficher_fichier_nutrition():
+   with open("nutrition.csv", "r", newline="") as f:
+      reader = csv.reader(f, delimiter=";")
+      for ligne in reader:
+         print(";".join(ligne))
+#def valeurNutritiveValides(valeur):
+#   if 0 <= valeur <= 10000:
+#      return True
+#   else:
+#      return False
 
-
-def valeurNutritiveValides(valeur):
-   if 0 <= valeur <= 10000:
-      return True
-   else:
-      return False
+def get_nouvel_id():
+   with open("nutrition.csv", "r", newline="") as f:
+      reader = csv.reader(f, delimiter=";")
+      max_id = 0
+      for ligne in reader:
+         if ligne[0].isdigit() and int(ligne[0]) > max_id:
+            max_id = int(ligne[0])
+   return max_id + 1
 
 global valeur
 data = pd.read_csv("nutrition.csv", index_col='Id', sep=';', encoding='utf-8')
