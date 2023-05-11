@@ -77,6 +77,7 @@ def option3():
       numeroDeIDValide()
       afficherMenu()
 def option4():
+   global nutriment_select, new_val
    df = pd.read_csv("nutrition.csv", sep=";", encoding='utf-8')
    while True:
       print("*MENU4*\n *Modification d’une valeur nutritive d’un aliment recherche par Id*")
@@ -134,7 +135,30 @@ def option4():
          break
       else:
          afficherMenu()
+
+
 def option5():
+
+   dfNoId = pd.read_csv('NUTRITION.CSV', index_col=False, sep=";")
+   print("Format des données:")
+   print(dfNoId.dtypes)
+   new_data = {}
+   for column in dfNoId.columns:
+      if column != 'Id':
+         new_data[column] = input(f"Entrez la valeur pour {column}: ")
+         dfNoId = dfNoId._append(new_data, ignore_index=True)
+         dfNoId.to_csv('NUTRITION.CSV', index=False, mode='a')
+   print("Nouvel aliment ajouté avec succès !")
+
+def option6():
+    print("Voulez-vous quitter (Oui/Non) ?")
+    Reponse = input("-->")
+    if Reponse == "oui" or Reponse == "Oui":
+        print("Au revoir !")
+        exit()
+    else:
+        afficherMenu()
+
    print("Veuillez insérer un nouvel aliment sous cette forme : ")
    print("Catégorie;Description;Energ_Kcal;Protéine;gras;Cholestérol;Sodium")
    nouvelle_entree = input()
@@ -146,6 +170,7 @@ def option5():
    trier_fichier_par_id()
    print("Affichage et enregistrement --> OK")
    afficher_fichier_nutrition()
+
 def option6():
    print("Voulez-vous quitter (Oui/Non) ?")
    Reponse = input("-->")
